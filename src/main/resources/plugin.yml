@@ -1,0 +1,5 @@
+name: ReGrow
+version: '${project.version}'
+main: lol.hyper.rightgrow.RightGrow
+api-version: 1.20
+author: hyperdefined
