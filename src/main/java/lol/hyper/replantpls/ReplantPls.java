@@ -15,6 +15,8 @@ public final class ReplantPls extends JavaPlugin {
     @Override
     public void onEnable() {
         Bukkit.getPluginManager().registerEvents(new PlayerInteract(), this);
+
+        Bukkit.getAsyncScheduler().runNow(this, scheduledTask -> checkForUpdates());
     }
 
     public void checkForUpdates() {
