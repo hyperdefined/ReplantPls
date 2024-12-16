@@ -2,6 +2,7 @@ package lol.hyper.replantpls;
 
 import lol.hyper.githubreleaseapi.GitHubRelease;
 import lol.hyper.githubreleaseapi.GitHubReleaseAPI;
+import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -15,6 +16,8 @@ public final class ReplantPls extends JavaPlugin {
     @Override
     public void onEnable() {
         Bukkit.getPluginManager().registerEvents(new PlayerInteract(), this);
+
+        new Metrics(this, 24167);
 
         Bukkit.getAsyncScheduler().runNow(this, scheduledTask -> checkForUpdates());
     }
