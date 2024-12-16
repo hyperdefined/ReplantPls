@@ -20,7 +20,7 @@ public final class ReplantPls extends JavaPlugin {
     public void checkForUpdates() {
         GitHubReleaseAPI api;
         try {
-            api = new GitHubReleaseAPI("TimeBar", "hyperdefined");
+            api = new GitHubReleaseAPI("ReplantPls", "hyperdefined");
         } catch (IOException e) {
             logger.warning("Unable to check updates!");
             e.printStackTrace();
