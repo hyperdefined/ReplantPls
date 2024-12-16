@@ -1,5 +1,6 @@
-name: ReGrow
+name: ReplantPls
 version: '${project.version}'
-main: lol.hyper.rightgrow.RightGrow
-api-version: 1.20
+main: lol.hyper.replantpls.ReplantPls
+api-version: 1.21
 author: hyperdefined
+website: https://github.com/hyperdefined/ReplantPls
