@@ -13,6 +13,7 @@ ReplantPls is a simple plugin to make farming easier. Replant crops more easily 
 
 ## Features
 * Replant wheat, beetroots, carrots, potatoes, nether warts, torchflower crops, and pitcher crops by right-clicking the fully grown plant with their seeds.
+* mcMMO support.
 
 ## Documentation
 Visit the [wiki](https://github.com/hyperdefined/ReplantPls/wiki) for help.
