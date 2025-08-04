@@ -6,3 +6,4 @@ author: hyperdefined
 website: https://github.com/hyperdefined/ReplantPls
 description: Replant crops more easily!
 folia-supported: true
+softdepend: [mcMMO]

@@ -1,6 +1,5 @@
 package lol.hyper.replantpls;
 
-import net.kyori.adventure.text.Component;
 import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -17,6 +16,12 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 
 public class PlayerInteract implements Listener {
+
+    private final ReplantPls replantPls;
+
+    public PlayerInteract(ReplantPls replantPls) {
+        this.replantPls = replantPls;
+    }
 
     @EventHandler
     public void onClick(PlayerInteractEvent event) {
@@ -113,6 +118,11 @@ public class PlayerInteract implements Listener {
                 if (player.getGameMode() != GameMode.CREATIVE) {
                     inventory.getItemInMainHand().setAmount(heldItem.getAmount() - 1);
                 }
+
+                // give mcMMO exp to the player if it's enabled
+                if (replantPls.getMCMMOHook() != null) {
+                    replantPls.getMCMMOHook().addExp(player, plant.getType().toString());
+                }
                 break;
             }
             case PITCHER_CROP: {
@@ -140,6 +150,11 @@ public class PlayerInteract implements Listener {
                 // subtract the seeds in hand
                 if (player.getGameMode() != GameMode.CREATIVE) {
                     inventory.getItemInMainHand().setAmount(heldItem.getAmount() - 1);
+                }
+
+                // give mcMMO exp to the player if it's enabled
+                if (replantPls.getMCMMOHook() != null) {
+                    replantPls.getMCMMOHook().addExp(player, plant.getType().toString());
                 }
                 break;
             }
