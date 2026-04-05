@@ -1,7 +1,7 @@
 name: ReplantPls
-version: '${project.version}'
+version: '${version}'
 main: lol.hyper.replantpls.ReplantPls
-api-version: 1.21
+api-version: '26.1.1'
 author: hyperdefined
 website: https://github.com/hyperdefined/ReplantPls
 description: Replant crops more easily!
