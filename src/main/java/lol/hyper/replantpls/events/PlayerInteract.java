@@ -1,5 +1,6 @@
-package lol.hyper.replantpls;
+package lol.hyper.replantpls.events;
 
+import lol.hyper.replantpls.ReplantPls;
 import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -23,7 +24,7 @@ public class PlayerInteract implements Listener {
         this.replantPls = replantPls;
     }
 
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void onClick(PlayerInteractEvent event) {
         if (event.getAction() != Action.RIGHT_CLICK_BLOCK) {
             return;

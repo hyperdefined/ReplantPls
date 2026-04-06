@@ -3,6 +3,7 @@ package lol.hyper.replantpls;
 import lol.hyper.hyperlib.HyperLib;
 import lol.hyper.hyperlib.bstats.HyperStats;
 import lol.hyper.hyperlib.releases.HyperUpdater;
+import lol.hyper.replantpls.events.PlayerInteract;
 import lol.hyper.replantpls.mcmmo.MCMMOHook;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
