@@ -16,7 +16,7 @@ repositories {
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:26.1.1.build.+")
-    compileOnly("com.gmail.nossr50.mcMMO:mcMMO:2.2.049")
+    compileOnly("com.gmail.nossr50.mcMMO:mcMMO:2.2.051")
     compileOnly("com.github.hyperdefined:hyperlib:1.0.14:all")
 }
 
